@@ -1,0 +1,15 @@
+p{
+    font-size: medium;
+    color: blue;
+}
+
+.destacados{
+    font-size: large;
+    color: red;
+}
+
+h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}

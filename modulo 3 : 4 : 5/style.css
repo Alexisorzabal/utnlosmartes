@@ -1,0 +1,63 @@
+/*font-family: 'Indie Flower', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+p {
+    font-size: medium;
+    color: blue;
+}
+
+.center {
+    width: 300px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.destacados {
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    color: red;
+}
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.box {
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(248, 238, 220);
+    box-shadow: 9px 11px 37px 7px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: 9px 11px 37px 7px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 9px 11px 37px 7px rgba(0, 0, 0, 0.53);
+    border-radius: 100px 16px 100px 16px;
+    -webkit-border-radius: 100px 16px 100px 16px;
+    -moz-border-radius: 100px 16px 100px 16px;
+}
+
+#caja {
+    font-family: 'Roboto', sans-serif;
+    background-color: blueviolet;
+    font-size: larger;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.pagina {
+    font-family: 'Indie Flower', cursive;
+    font-size: large;
+}

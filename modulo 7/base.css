@@ -20,6 +20,7 @@ nav {
 	background: #CC3910;
 	float: left;
 	width: 160px;
+	color: #000;
 }
 
 ul {
@@ -57,9 +58,12 @@ aside {
 
 	nav {
 		background-color: #ffcc66;
-
 		border: black 1px solid;
 		width: 800px;
+	}
+
+	a{
+		color: #000;
 	}
 
 	section {

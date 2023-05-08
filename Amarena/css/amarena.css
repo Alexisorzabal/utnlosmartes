@@ -48,7 +48,9 @@ ul li a:hover{
 }
 .slider-wrapper{
     position: relative;
-    max-width: 70rem;
+    width: auto;
+    height: auto;
+   
     margin: 0 auto;
 }
 .slider{
@@ -77,15 +79,16 @@ ul li a:hover{
     
 }
 .slider-nav a{
-    
+    background-color: white;
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     opacity: 2;
     transition: opacity ease 250ms;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0%,0%,0%, 1);
     
 }
 .slider-nav a:hover{
-    opacity: 3;
+    opacity: 1;
 
 }

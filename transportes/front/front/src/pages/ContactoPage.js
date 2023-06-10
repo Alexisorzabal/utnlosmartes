@@ -4,7 +4,7 @@ const ContactoPage = (props) => {
         <main className="holder contacto">
             <div>
                 <h2>Contacto Rápido</h2>
-                <form action="" method="" className="formulario">
+                <form action=""method="" className="formulario">
                     <p>
                         <label for="nombre">Nombre</label>
                         <input type="text" name="" />

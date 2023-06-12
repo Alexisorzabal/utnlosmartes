@@ -1,9 +1,13 @@
 import React from "react";
+import '../styles/pages/HomePage.css'
+import '../styles/pages/contacto.css'
+import '../styles/pages/nosotrosPage.css'
+
 const HomePage = (props) => {
     return (
         <main className="holder">
-            <div className="images">
-                <img src="/Users/alexisorzabal/Documents/utnlosmartes 2/Untitled/transportes/front/front/public/images/logo.png" alt="Avion"/>
+            <div className="homeimg">
+                <img src="/images/homeimg.jpg" alt="Avion"/>
             </div>
             <div className="columnas">
                 <div className="bienvenidos">

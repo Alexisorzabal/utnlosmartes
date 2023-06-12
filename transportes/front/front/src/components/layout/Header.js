@@ -1,9 +1,10 @@
 import React from "react";
+import '../../styles/header.css';
 const Header = (props) => {
     return (
         <header>
             <div className="holder">
-                <img src="img/logo.png" width="100" alt="Transportes X" /> <h1>Transportes X</h1>
+                <img src="images/logo.png" width="100" alt="Transportes X" /> <h1>Transportes X</h1>
             </div>
         </header>
     )

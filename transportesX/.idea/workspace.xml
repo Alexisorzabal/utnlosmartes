@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec15d6f8-6189-44a4-8ecf-8ad3478b5559" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../transportes/front/front/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transportes/front/front/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transportes/front/front/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/../transportes/front/front/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transportes/front/front/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transportes/front/front/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transportes/front/front/src/components/layout/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transportes/front/front/src/components/layout/Nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../transportes/front/front/src/pages/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/../transportes/front/front/src/pages/HomePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

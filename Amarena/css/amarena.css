@@ -7,6 +7,7 @@ header{
     display: flex;
     background-color:#f5c3c5 ;
     justify-content: space-between;
+    overflow: auto;
     height: 70px;
     align-items: center;
     padding: 10px;
@@ -43,13 +44,17 @@ ul li a:hover{
 
 /*slider*/
 .container{
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+    padding-top: 20px;
+    
 }
 .slider-wrapper{
     position: relative;
-    width: auto;
-    height: auto;
-   
+
+    width: 1500px;
+    height: 850px;
     margin: 0 auto;
 }
 .slider{
@@ -91,48 +96,55 @@ ul li a:hover{
     opacity: 1;
 
 }
-.sabores{
-    font-size: 70px;
+/*acerca*/
+.acercade{
+    padding-top: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+.acerca{
+    font-size: 40px;
     color: #777576;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 40px;
+    display: flex;
+    justify-content: flex-start;
+   
+}
+
+.containeracerca{
     display: flex;
     justify-content: center;
 }
-.historia p{
-    font-size: 12px;
-}
-.personas{
-    display: flex;
-    justify-content: space-around
-}
-.persona{
-    
+.imgacerca{
+   
     text-decoration: none;
     padding:  50px;
     margin-bottom: 30px;
-    display: block;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: large;
-}
-.persona img{
     box-shadow: 0 0 10px black;
-    border-radius: 100%;
-    max-width: 100%;
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 
-.persona h5{
-    margin: 0;
-    font-weight: normal;
-    color: #777576;
+.infoAcerca{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 60px;
+    padding-right: 600px;
+  
+   
 }
-.persona h5{
-    font-size: xx-large;
+footer{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ccc;
+    clear: both;
+    color: #333;
+    text-align: center;
+    padding: 5px 0;
     margin-top: 20px;
-}
-
-.persona p{
-    color: #666;
-    font-size: 10px;
+    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }

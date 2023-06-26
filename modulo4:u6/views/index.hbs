@@ -1,2 +1,10 @@
 <h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+{{#if conocido}}
+<p>Hola {{nombre}} <a href="/salir"></a></p>
+{{/if}}  
+{{#unless conocido}} 
+<p>no te conozo</p>
+<form action="/ingresar" method="post">
+<input type="text" name="nombre"><button>ingresar</button>
+</form>
+{{/unless}}

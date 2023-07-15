@@ -140,9 +140,9 @@ ul li a:hover{
 }
 footer{
     font-family: 'Montserrat', sans-serif;
-    background-color: #ccc;
+    background-color:#f5c3c5;
     clear: both;
-    color: #333;
+    color:white;
     text-align: center;
     padding: 5px 0;
     margin-top: 20px;
@@ -150,24 +150,22 @@ footer{
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
 }
 /*nosotros*/
-.contacto{
+.holderform h1{
     display: flex;
-    gap: 150px;
+    justify-content:center; 
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+   
 }
-.contacto div{
-    width: 100%;
-}
-.datos p{
-    font-size: 14px;
-}
-.datos ul li{
-    font-size: 13px;
-    
-}
-.formulario p{
+img{
     display: flex;
+    justify-content: space-between;
 }
+
+
 .formulario p label{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
     min-width: 100px;
 
 }
@@ -181,6 +179,7 @@ input{
     width: 100%;
 }
 .formulario input[type="submit"]{
+    font-family: 'Montserrat', sans-serif;
     background: #6da9ed;
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
     color:white;

@@ -2,8 +2,7 @@ var express = require('express');
 var router = express.Router();
 router.get('/', function (req, res, next) {
     res.render('admin/novedades', {
-        usuario: req.session.nombre,
-        layout: 'admin/layout',
+        layout: 'admin/layout'
     });
 });
 module.exports = router;

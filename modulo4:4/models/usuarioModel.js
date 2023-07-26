@@ -6,8 +6,8 @@ async function getUserByUsernameAndPassword(user,password){
         var query = 'select * from usuarios where usuario = ? limit 1';
         var rows = await pool.query(query,[user,md5(password)]);
         return rows[0];
-    }catch(error){
+    } catch(error){
         console.log(error);
     }
 }
-module.exports = {getUserByUsernameAndPassword}
+module.exports = {getUserByUsernameAndPassword}; 

@@ -25,10 +25,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(session({
-  secret:'PW2023awqyeudj',
-  Cookie: {maxAge:null},
+  secret: 'PW2023awqyeudj',
+  Cookie: { maxAge: null },
   resave: false,
-  saveUninitialized:true
+  saveUninitialized: true
 }))
 
 secured = async (req, res, next) => {
@@ -57,15 +57,15 @@ secured = async (req, res, next) => {
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/admin/login',loginRouter);
+app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, adminRouter);
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
   next(createError(404));
 });
 
 // error handler
-app.use(function(err, req, res, next) {
+app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};

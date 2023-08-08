@@ -13,7 +13,8 @@
         </div>
     </div>
     <div class="col-12 text-end">
-        <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus" aria-hidden="true"></i>Nuevo</a>
+        <a class="btn btn-success" href="/admin/novedades/agregar"><i class="fa fa-plus"
+                aria-hidden="true"></i>Nuevo</a>
 
     </div>
 </div>
@@ -25,7 +26,7 @@
                 <tr class="table-dark">
                     <th scope="col">#</th>
                     <th scope="col">titulo</th>
-                    
+
                     <th class="text-end">Acciones</th>
 
                 </tr>
@@ -36,10 +37,9 @@
                     <th scope="row">{{id}}</th>
                     <td>{{titulo}}</td>
                     <td class="text-end">
-                        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                            <button class="btn btn-primary me-md-2" type="button">Nuevo</button>
-                            <button class="btn btn-primary" href="/admin/novedades/eliminar/{{id}}" type="button">Borrar</button>
-                        </div>
+                        <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true">Modificar</i></a>
+                        <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash"
+                                aria-hidden="true">Borrar</i></a>
 
                     </td>
                 </tr>

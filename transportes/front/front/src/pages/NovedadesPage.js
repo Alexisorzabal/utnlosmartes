@@ -1,28 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import NovedadItem from '../components/novedades/novedadItem';
+
+
 const NovedadesPage = (props) => {
+
+    const [loading, setLoading] = useState(false);
+    const [novedades, setNovedades] = useState([]);
+    useEffect(() => {
+        const cargarNovedades = async () => {
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades'); setNovedades(response.data);
+            setLoading(false);
+        };
+        cargarNovedades();
+    }, []);
     return (
-        <main className="holder">
-            <div>
-                <h2>Novedades</h2>
-                <h3>Subtitulo</h3>
-                <p>Descripcion - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cumque debitis omnis.
-                    Incidunt autem vero suscipit quibusdam ipsum, maiores magnam sapiente expedita excepturi, error rem quisquam
-                    sequi, adipisci fugiat illo?</p>
-                <br/>
-                    <h2>Novedades</h2>
-                    <h3>Subtitulo</h3>
-                    <p>Descripcion - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cumque debitis omnis.
-                        Incidunt autem vero suscipit quibusdam ipsum, maiores magnam sapiente expedita excepturi, error rem quisquam
-                        sequi, adipisci fugiat illo?</p>
-                    <br/>
-                        <h2>Novedades</h2>
-                        <h3>Subtitulo</h3>
-                        <p>Descripcion - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum cumque debitis omnis.
-                            Incidunt autem vero suscipit quibusdam ipsum, maiores magnam sapiente expedita excepturi, error rem quisquam
-                            sequi, adipisci fugiat illo?</p>
-                        <br/>
-                        </div>
-                    </main>
-                    );
+        <section className="holder">
+            <h2>Novedades</h2>
+            {loading ? (
+                <p>cargando...</p>
+            ) : (
+                novedades.map(item => <NovedadItem key={item.id}
+                    title={item.titulo} subtitle={item.subtitulo}
+                    imagen={item.imagen} body={item.cuerpo} />)
+            )}
+        </section>
+    );
 }
-                    export default NovedadesPage;
+export default NovedadesPage;

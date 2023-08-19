@@ -1,17 +1,21 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import '../../styles/nav.css'
 const Nav = (props) => {
   return (
     <nav>
-      <div>
+       <div>
         <ul>
-          <li><link to="/">Home</link></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="novedades.html">Novedades</a></li>
-          <li><a href="pedidosYa.html">Pedidos Ya</a></li>
+        <li><NavLink to="/" className={({isActive}) => isActive ? "activo":undefined}>Home</NavLink></li>
+                    <li><NavLink to="/Nosotros" className={({isActive}) => isActive ? "activo":undefined}>Nosotros</NavLink></li>
+                    <li><NavLink to="/contacto" className={({isActive}) => isActive ? "activo":undefined}>Contacto</NavLink></li>
+                    <li><NavLink to="/eventos" className={({isActive}) => isActive ? "activo":undefined}>Eventos</NavLink></li>
         </ul>
       </div>
+      
     </nav>
+    
   )
+  
 }
 export default Nav;

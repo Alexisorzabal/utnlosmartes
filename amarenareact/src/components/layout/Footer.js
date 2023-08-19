@@ -1,10 +1,11 @@
 import React from 'react'
+import '../../styles/footer.css'
 
 export const Footer = (props) => {
   return (
-    <div>
+    <footer>
       <h3>Creado Por Alexis Orzabal 2023</h3>
-      </div>
+      </footer>
   )
 }
 export default Footer;

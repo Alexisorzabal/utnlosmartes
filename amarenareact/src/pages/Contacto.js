@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Sabores = () => {
+const contacto = () => {
   return (
     <div>Sabores</div>
   )

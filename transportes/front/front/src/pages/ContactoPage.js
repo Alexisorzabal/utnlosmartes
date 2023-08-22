@@ -1,4 +1,4 @@
-import React from "react";
+
 import '../styles/pages/contacto.css'
 import React, {useState} from 'react';
 
@@ -6,7 +6,6 @@ import axios from 'axios';
 
 const ContactoPage = (props) => {
 
-    const ContactoPage = (props) => {
         const initialForm = {
             nombre: '',
             email: '',
@@ -27,7 +26,7 @@ const ContactoPage = (props) => {
         }
         const handleSubmit = async e => {
             e.preventDefault();
-            SetMsg('');
+            setMsg('');
             setSending(true)
             const response = await
                 axios.post('http://localhost:3000/api/contacto',formData);
@@ -58,7 +57,7 @@ const ContactoPage = (props) => {
                         </p>
                         <p>
                             <label for="mensaje"> Mensaje</label>
-                            <textarea name="mendaje" value={formData.mensaje} onChange={handleChange}></textarea>
+                            <textarea name="mensaje" value={formData.mensaje} onChange={handleChange}></textarea>
                         </p>
                         <p class="acciones"><input type="submit"
                             value="Enviar" />
@@ -83,5 +82,5 @@ const ContactoPage = (props) => {
             </main>
         )
     }
-}
+
     export default ContactoPage;
